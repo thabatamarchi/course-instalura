@@ -6,7 +6,6 @@ const runLogin = async (username,password) => {
     password: password
   });
 
-
   if( response.status === 200) {
     return response.headers['x-access-token']    
   } else {
